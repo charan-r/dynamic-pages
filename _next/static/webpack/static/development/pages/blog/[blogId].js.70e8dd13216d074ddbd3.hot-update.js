@@ -9,8 +9,8 @@ webpackHotUpdate("static/development/pages/blog/[blogId].js",{
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
@@ -31,38 +31,21 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 function Blogpage(props) {
-  var title = "title goes here";
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(props["jsonData"]),
+  // const title = "title goes here";
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    title: 'one title'
+  }),
       blogData = _useState[0],
-      setBlogData = _useState[1]; // const { title = "sdfdsf" } = props["jsonData"];
+      setBlogData = _useState[1]; // // const { title = "sdfdsf" } = props["jsonData"];
+  // async function refresh() {
+  //   console.log("dsfdsfdsf");
+  //   const refreshedProps = await fetchData();
+  //   console.log("refreshedProps", refreshedProps);
+  //   setBlogData(refreshedProps["jsonData"]);
+  // }
 
 
-  function refresh() {
-    var refreshedProps;
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function refresh$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            console.log("dsfdsfdsf");
-            _context.next = 3;
-            return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetchData());
-
-          case 3:
-            refreshedProps = _context.sent;
-            console.log("refreshedProps", refreshedProps);
-            setBlogData(refreshedProps["jsonData"]);
-
-          case 6:
-          case "end":
-            return _context.stop();
-        }
-      }
-    });
-  }
-
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    refresh();
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {// refresh();
   }, []);
   return __jsx("div", {
     __source: {
@@ -82,9 +65,9 @@ function Blogpage(props) {
       lineNumber: 28
     },
     __self: this
-  }, title), __jsx("meta", {
+  }, blogData["title"]), __jsx("meta", {
     name: "description",
-    content: "Helmet application",
+    content: blogData["title"] + "description goes here",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -93,45 +76,22 @@ function Blogpage(props) {
   })), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 50
     },
     __self: this
-  }, "description"));
-}
+  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(blogData)));
+} // async function fetchData() {
+//   console.log("quesry", useRouter);
+//   const res = await fetch(`https://jsonplaceholder.typicode.com/todos/1`);
+//   const json = await res.json();
+//   return { jsonData: json };
+// }
+// Blogpage.getInitialProps = fetchData;
 
-function fetchData() {
-  var res, json;
-  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchData$(_context2) {
-    while (1) {
-      switch (_context2.prev = _context2.next) {
-        case 0:
-          console.log("quesry", next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"]);
-          _context2.next = 3;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://jsonplaceholder.typicode.com/todos/1"));
 
-        case 3:
-          res = _context2.sent;
-          _context2.next = 6;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
-
-        case 6:
-          json = _context2.sent;
-          return _context2.abrupt("return", {
-            jsonData: json
-          });
-
-        case 8:
-        case "end":
-          return _context2.stop();
-      }
-    }
-  });
-}
-
-Blogpage.getInitialProps = fetchData;
 /* harmony default export */ __webpack_exports__["default"] = (Blogpage);
 
 /***/ })
 
 })
-//# sourceMappingURL=[blogId].js.e4c51a4c2831b37c594c.hot-update.js.map
+//# sourceMappingURL=[blogId].js.70e8dd13216d074ddbd3.hot-update.js.map
