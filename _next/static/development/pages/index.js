@@ -10907,9 +10907,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 15
     },
     __self: this
-  }, "Go to Blog 11", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/blog/[blogId]",
-    as: "/blog/11",
+  }, "Go to Blog 1", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/blog",
+    as: "/blog",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -10921,15 +10921,15 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 18
     },
     __self: this
-  }, "Blog 11"))), __jsx("div", {
+  }, "Blog 1"))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
   }, "Go to Blog 2", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/blog/[blogId]",
-    as: "/blog/2",
+    href: "/blog",
+    as: "/blog",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -10948,8 +10948,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, "Go to Blog 3", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/blog/[blogId]",
-    as: "/blog/3",
+    href: "/blog",
+    as: "/blog",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -10966,7 +10966,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Findex.js ***!
   \************************************************************************************************************************/
@@ -10989,5 +10989,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
