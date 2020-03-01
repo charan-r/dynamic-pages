@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/[blogId].js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -4013,21 +4013,21 @@ module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js!./":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js!./":
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js ***!
+  \*******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/[blogId]", function() {
-      var mod = __webpack_require__(/*! ./pages/blog/[blogId].js */ "./pages/blog/[blogId].js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog", function() {
+      var mod = __webpack_require__(/*! ./pages/blog/index.js */ "./pages/blog/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/blog/[blogId].js */ "./pages/blog/[blogId].js", function() {
-          if(!next.router.components["/blog/[blogId]"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/blog/[blogId].js */ "./pages/blog/[blogId].js")
-          next.router.update("/blog/[blogId]", updatedPage)
+        module.hot.accept(/*! ./pages/blog/index.js */ "./pages/blog/index.js", function() {
+          if(!next.router.components["/blog"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/blog/index.js */ "./pages/blog/index.js")
+          next.router.update("/blog", updatedPage)
         })
       }
       return mod
@@ -9905,10 +9905,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/blog/[blogId].js":
-/*!********************************!*\
-  !*** ./pages/blog/[blogId].js ***!
-  \********************************/
+/***/ "./pages/blog/index.js":
+/*!*****************************!*\
+  !*** ./pages/blog/index.js ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9928,7 +9928,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "/var/nextjs/demo-project/git/pages/blog/[blogId].js";
+var _jsxFileName = "/var/nextjs/demo-project/git/pages/blog/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -9988,9 +9988,9 @@ Blogpage.getInitialProps = function _callee(ctx) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          console.log("router", ctx['query']);
+          console.log("router", ctx);
           _context.next = 3;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()("https://jsonplaceholder.typicode.com/todos/".concat(ctx['query']['blogId'])));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()("https://jsonplaceholder.typicode.com/todos/".concat(ctx['asPath'].split('=')[1])));
 
         case 3:
           res = _context.sent;
@@ -10015,14 +10015,14 @@ Blogpage.getInitialProps = function _callee(ctx) {
 
 /***/ }),
 
-/***/ 1:
-/*!*********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js ***!
-  \*********************************************************************************************************************************************************/
+/***/ 3:
+/*!***********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js!./");
 
 
 /***/ }),
@@ -10038,5 +10038,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=[blogId].js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=blog.js.map
