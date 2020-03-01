@@ -9161,7 +9161,7 @@ Blogpage.getInitialProps = fetchData;
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js ***!
   \*********************************************************************************************************************************************************/
@@ -9184,5 +9184,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[blogId].js.map

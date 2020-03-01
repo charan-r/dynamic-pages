@@ -10909,7 +10909,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: this
   }, "Go to Blog 1", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "blog",
-    as: "blog/1",
+    as: "/blog/1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -10929,7 +10929,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: this
   }, "Go to Blog 2", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "blog",
-    as: "blog/2",
+    as: "/blog/2",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -10949,7 +10949,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: this
   }, "Go to Blog 3", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "blog",
-    as: "blog/3",
+    as: "/blog/3",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -10966,7 +10966,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Findex.js ***!
   \************************************************************************************************************************/
@@ -10989,5 +10989,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
