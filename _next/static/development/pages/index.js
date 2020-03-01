@@ -10908,8 +10908,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, "Go to Blog 1", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/blog",
-    as: "/blog?blogId=1",
+    href: "/blog/[blogId]",
+    as: "/blog/1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -10928,8 +10928,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, "Go to Blog 2", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/blog",
-    as: "/blog?blogId=2",
+    href: "/blog/[blogId]",
+    as: "/blog/2",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -10948,8 +10948,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __self: this
   }, "Go to Blog 3", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/blog",
-    as: "/blog?blogId=3",
+    href: "/blog/[blogId]",
+    as: "/blog/3",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29

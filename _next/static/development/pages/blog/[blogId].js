@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/[blogId].js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -4013,21 +4013,21 @@ module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js!./":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js ***!
-  \*******************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js!./":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js ***!
+  \*****************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog", function() {
-      var mod = __webpack_require__(/*! ./pages/blog/index.js */ "./pages/blog/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/[blogId]", function() {
+      var mod = __webpack_require__(/*! ./pages/blog/[blogId].js */ "./pages/blog/[blogId].js")
       if(true) {
-        module.hot.accept(/*! ./pages/blog/index.js */ "./pages/blog/index.js", function() {
-          if(!next.router.components["/blog"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/blog/index.js */ "./pages/blog/index.js")
-          next.router.update("/blog", updatedPage)
+        module.hot.accept(/*! ./pages/blog/[blogId].js */ "./pages/blog/[blogId].js", function() {
+          if(!next.router.components["/blog/[blogId]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/blog/[blogId].js */ "./pages/blog/[blogId].js")
+          next.router.update("/blog/[blogId]", updatedPage)
         })
       }
       return mod
@@ -9905,10 +9905,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/blog/index.js":
-/*!*****************************!*\
-  !*** ./pages/blog/index.js ***!
-  \*****************************/
+/***/ "./pages/blog/[blogId].js":
+/*!********************************!*\
+  !*** ./pages/blog/[blogId].js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9920,15 +9920,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/lib/Helmet.js");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/lib/Helmet.js");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
 
 
-var _jsxFileName = "/var/nextjs/demo-project/git/pages/blog/index.js";
+var _jsxFileName = "/var/nextjs/demo-project/git/pages/blog/[blogId].js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -9937,14 +9937,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 function Blogpage(props) {
   console.log("props", props);
-  var title = props['jsonData'].title;
+  var title = props["jsonData"].title;
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
-  }, __jsx(react_helmet__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, __jsx(react_helmet__WEBPACK_IMPORTED_MODULE_4___default.a, {
     title: title,
     meta: [{
       name: "author",
@@ -9970,40 +9970,41 @@ function Blogpage(props) {
     }],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     },
     __self: this
-  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(props['jsonData'])));
+  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_1___default()(props["jsonData"])));
 }
 
-Blogpage.getInitialProps = function _callee(ctx) {
-  var res, json;
+Blogpage.getInitialProps = function _callee(_ref) {
+  var query, res, json;
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          console.log("router", ctx);
-          _context.next = 3;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()("https://jsonplaceholder.typicode.com/todos/".concat(ctx['asPath'].split('=')[1])));
+          query = _ref.query;
+          console.log("quesry", query);
+          _context.next = 4;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://jsonplaceholder.typicode.com/todos/".concat(query['blogId'])));
 
-        case 3:
+        case 4:
           res = _context.sent;
-          _context.next = 6;
+          _context.next = 7;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-        case 6:
+        case 7:
           json = _context.sent;
           return _context.abrupt("return", {
             jsonData: json
           });
 
-        case 8:
+        case 9:
         case "end":
           return _context.stop();
       }
@@ -10016,13 +10017,13 @@ Blogpage.getInitialProps = function _callee(ctx) {
 /***/ }),
 
 /***/ 3:
-/*!***********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js ***!
-  \***********************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js ***!
+  \*********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2F%5BblogId%5D&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Fblog%2F%5BblogId%5D.js!./");
 
 
 /***/ }),
@@ -10039,4 +10040,4 @@ module.exports = dll_5f137288facb1107b491;
 /***/ })
 
 },[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=blog.js.map
+//# sourceMappingURL=[blogId].js.map
