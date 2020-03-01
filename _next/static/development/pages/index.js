@@ -10907,24 +10907,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 15
     },
     __self: this
-  }, "Go to Blog 1", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Go to Blog 11", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "blog",
-    as: "/blog/1",
+    as: "/blog/11",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
-  }, "Blog 1"))), __jsx("div", {
+  }, "Blog 11"))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, "Go to Blog 2", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -10932,19 +10932,19 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     as: "/blog/2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }, "Blog 2"))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 29
     },
     __self: this
   }, "Go to Blog 3", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -10952,13 +10952,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     as: "/blog/3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 31
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 32
     },
     __self: this
   }, "Blog 3"))));
@@ -10966,7 +10966,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Findex.js ***!
   \************************************************************************************************************************/
@@ -10989,5 +10989,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
