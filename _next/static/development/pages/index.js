@@ -110,6 +110,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/values.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/values */ "./node_modules/core-js/library/fn/object/values.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
@@ -2562,6 +2573,19 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/values.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/values.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es7.object.values */ "./node_modules/core-js/library/modules/es7.object.values.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.values;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/promise.js":
 /*!****************************************************!*\
   !*** ./node_modules/core-js/library/fn/promise.js ***!
@@ -4430,6 +4454,38 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_object-to-array.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-to-array.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
+var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
+var isEnum = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js").f;
+module.exports = function (isEntries) {
+  return function (it) {
+    var O = toIObject(it);
+    var keys = getKeys(O);
+    var length = keys.length;
+    var i = 0;
+    var result = [];
+    var key;
+    while (length > i) {
+      key = keys[i++];
+      if (!DESCRIPTORS || isEnum.call(O, key)) {
+        result.push(isEntries ? [key, O[key]] : O[key]);
+      }
+    }
+    return result;
+  };
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_perform.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_perform.js ***!
@@ -6070,6 +6126,26 @@ __webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 
 $export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.object.values.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.object.values.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/tc39/proposal-object-values-entries
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var $values = __webpack_require__(/*! ./_object-to-array */ "./node_modules/core-js/library/modules/_object-to-array.js")(false);
+
+$export($export.S, 'Object', {
+  values: function values(it) {
+    return $values(it);
+  }
+});
 
 
 /***/ }),
@@ -11642,42 +11718,54 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
+
+
 var _jsxFileName = "/var/nextjs/demo-project/git/pages/index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+
+var Jobs = function Jobs(props) {
+  console.log("propssss", _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1___default()(props.jobs));
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1___default()(props.jobs)),
       jobs = _useState[0],
-      setJobs = _useState[1];
+      setJobs = _useState[1]; // useEffect(() => {
+  //   getJobs().then(res => {
+  //     console.log("jobsjobs", res);
+  //     setJobs(res);
+  //   });
+  // }, []);
+  // const getJobs = () => {
+  //   return Axios.get(
+  //     "https://api.lever.co/v0/postings/gojek?limit=10&mode=json"
+  //   )
+  //     .then(function(response) {
+  //       // handle success
+  //       return response.data;
+  //     })
+  //     .catch(function(error) {
+  //       console.log(error);
+  //     })
+  //     .finally(function() {});
+  // };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    getJobs().then(function (res) {
-      console.log("jobsjobs", res);
-      setJobs(res);
-    });
-  }, []);
 
-  var getJobs = function getJobs() {
-    return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("https://api.lever.co/v0/postings/gojek?limit=10&mode=json").then(function (response) {
-      // handle success
-      return response.data;
-    })["catch"](function (error) {
-      console.log(error);
-    })["finally"](function () {});
-  };
-
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, jobs.length > 0 ? jobs.map(function (job) {
@@ -11685,75 +11773,60 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       key: job.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 35
       },
       __self: this
-    }, job.text, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "blo/[id]g",
+    }, job.text, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      href: "blog/[id]",
       as: "" + "/blog/".concat(job.id),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 37
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 41
       },
       __self: this
     }, "see more...")));
-  }) : 'Loading...');
-}); // import React, { useEffect, useState } from "react";
-// import Link from "next/link";
-// import { Helmet } from "react-helmet";
-// import Axios from "axios";
-// export default () => {
-//   // const [jobs, setJobs] = useState([]);
-//   // useEffect(() => {
-//   //   getJobs().then(res => {
-//   //     console.log("jobsjobs", res);
-//   //     setJobs(res);
-//   //   });
-//   // }, []);
-//   // const getJobs = () => {
-//   //   return Axios.get(
-//   //     "https://api.lever.co/v0/postings/gojek?limit=10&mode=json"
-//   //   )
-//   //     .then(function(response) {
-//   //       // handle success
-//   //       return response.data;
-//   //     })
-//   //     .catch(function(error) {
-//   //       console.log(error);
-//   //     })
-//   //     .finally(function() {});
-//   // };
-//   return (
-//     <React.Fragment>
-//       {/* {jobs.map(job => {
-//         return (
-//           <div>
-//             {job.text}
-//             <Link
-//               href="blo/[id]g"
-//               as={
-//                 process.env.BACKEND_URL +
-//                 `/blog/${job.id}`
-//               }
-//             >
-//               <a>see more...</a>
-//             </Link>
-//           </div>
-//         );
-//       })} */}
-//     </React.Fragment>
-//   );
-// };
+  }) : "Loading...");
+};
+
+Jobs.getInitialProps = function _callee() {
+  var response, jobs;
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch("https://api.lever.co/v0/postings/gojek?limit=10&mode=json"));
+
+        case 2:
+          response = _context.sent;
+          _context.next = 5;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(response.json());
+
+        case 5:
+          jobs = _context.sent;
+          return _context.abrupt("return", {
+            jobs: jobs
+          });
+
+        case 7:
+        case "end":
+          return _context.stop();
+      }
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Jobs);
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fvar%2Fnextjs%2Fdemo-project%2Fgit%2Fpages%2Findex.js ***!
   \************************************************************************************************************************/
@@ -11776,5 +11849,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
