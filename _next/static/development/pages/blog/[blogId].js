@@ -10534,9 +10534,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 var Blog = function Blog(props) {
-  var title = props.title,
-      _props$body = props.body,
-      body = _props$body === void 0 ? "default body gettins" : _props$body;
+  var text = props.text,
+      _props$additionalPlai = props.additionalPlain,
+      additionalPlain = _props$additionalPlai === void 0 ? "default body gettins" : _props$additionalPlai;
   return __jsx("main", {
     __source: {
       fileName: _jsxFileName,
@@ -10555,9 +10555,9 @@ var Blog = function Blog(props) {
       lineNumber: 11
     },
     __self: this
-  }, title), __jsx("meta", {
+  }, text), __jsx("meta", {
     name: "description",
-    content: body,
+    content: additionalPlain,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -10569,13 +10569,13 @@ var Blog = function Blog(props) {
       lineNumber: 18
     },
     __self: this
-  }, title), __jsx("p", {
+  }, text), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, body), __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
+  }, additionalPlain), __jsx(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
     href: "/",
     as: "/",
     __source: {
@@ -10593,25 +10593,26 @@ var Blog = function Blog(props) {
 };
 
 Blog.getInitialProps = function _callee(query) {
-  var response, post;
+  var queryId, response, post;
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_6___default.a.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           console.log("qyeryss", query);
-          _context.next = 3;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_6___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default()("https://jsonplaceholder.typicode.com/posts/".concat(query.asPath.split("/")[2])));
+          queryId = query.asPath.split("/")[2];
+          _context.next = 4;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_6___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default()("https://api.lever.co/v0/postings/gojek/".concat(queryId)));
 
-        case 3:
+        case 4:
           response = _context.sent;
-          _context.next = 6;
+          _context.next = 7;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_6___default.a.awrap(response.json());
 
-        case 6:
+        case 7:
           post = _context.sent;
           return _context.abrupt("return", _objectSpread({}, post));
 
-        case 8:
+        case 9:
         case "end":
           return _context.stop();
       }
